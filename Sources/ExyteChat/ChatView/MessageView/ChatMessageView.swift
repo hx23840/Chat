@@ -49,6 +49,6 @@ struct ChatMessageView<MessageContent: View>: View {
                     font: messageFont)
             }
         }
-        .id(row.message.id)
+        .id(row.message.id + row.message.text)
     }
 }
